@@ -12,7 +12,6 @@ import javax.validation.constraints.Pattern;
 public class UserForm {
     @NotBlank
     private String username;
-    @NotBlank
     @Length(min = 6, message = "密碼至少需要六碼")
     private String password;
     @Pattern(regexp = "09\\d{2}(\\d{6}|-\\d{3}-\\d{3})", message = "請輸入正確的手機號碼")
