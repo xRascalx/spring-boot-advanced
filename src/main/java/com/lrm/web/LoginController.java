@@ -6,16 +6,11 @@ import com.lrm.form.UserForm;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
-import java.util.List;
 
-/**
- * Created by limi on 2017/8/22.
- */
 @Controller
 public class LoginController {
 
@@ -54,6 +49,6 @@ public class LoginController {
 
     @GetMapping("/exception")
     public String testException(){
-        throw new RuntimeException();
+        throw new RuntimeException("測試異常");
     }
 }
