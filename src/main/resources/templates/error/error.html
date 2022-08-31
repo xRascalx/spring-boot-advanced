@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <meta charset="UTF-8">
+    <title>錯誤</title>
+</head>
+<body>
+    <div class="container" style="max-width: 600px;margin-top: 50px">
+        <div class="jumbotron">
+            <h2>Error</h2>
+            <p>服務異常</p>
+            <p>請求路徑:<code th:text="${url}"></code></p>
+            <p>異常訊息:<code th:text="${exception.message}"></code></p>
+        </div>
+    </div>
+</body>
+</html>
