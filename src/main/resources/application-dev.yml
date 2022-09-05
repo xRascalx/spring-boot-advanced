@@ -1,0 +1,7 @@
+
+logging:
+  level:
+    root: debug
+    com.lrm: debug
+
+
