@@ -3,8 +3,9 @@ logging:
   level:
     root: warn
     com.lrm: warn
-#  file:
-#    name: devLog/my.log
-    path: devLog
-
-
+  file:
+    name: devLog/my.log
+#    path: devLog
+#    config: classpath:logbak-test.xml
+#    pattern:
+#      console: '%d{HH:mm:ss.SSS}'
