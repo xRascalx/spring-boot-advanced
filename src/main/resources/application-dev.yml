@@ -1,7 +1,10 @@
 
 logging:
   level:
-    root: debug
-    com.lrm: debug
+    root: warn
+    com.lrm: warn
+#  file:
+#    name: devLog/my.log
+    path: devLog
 
 
